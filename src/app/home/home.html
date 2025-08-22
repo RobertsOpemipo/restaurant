@@ -1,0 +1,49 @@
+<!-- home.component.html -->
+<div class="home-container container-fluid px-4 px-lg-5">
+  <div class="row align-items-center">
+    <!-- Content Column -->
+    <div class="content-column col-lg-6 order-lg-1 order-2">
+      <div class="circle-image mb-4 d-none d-lg-block">
+        <img src="/images/homeimage/deliciousfood.png" alt="Delicious Food" class="img-fluid rounded-circle">
+      </div>
+      <h1 class="mb-3">Provide the best<br>food for you.</h1>
+      <p class="description mb-4">
+        Etiam hendrerit nec ipsum eu dictum. Nulla facilisi.<br>
+        Ut quis laoreet arcu, nec vehicula eros. Praesent egestas gravida tincidunt. Etiam convallis.
+      </p>
+      
+      <div class="button-group d-flex gap-2 mb-3">
+        <app-button label="Menu" variant="btn-menu" class="btn-sm"></app-button>
+        <app-button label="Book Table" variant="btn-book" class="btn-sm"></app-button>
+      </div>
+      
+      <div class="social-media-container d-flex align-items-center w-100 mt-4">
+        <div class="social-links d-flex gap-3">
+          <a href="https://facebook.com" target="_blank" class="social-icon">
+            <img src="/images/homeimage/facebook.png" alt="Facebook" class="img-fluid">
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="/images/homeimage/insta.png" alt="Instagram" class="img-fluid">
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="/images/homeimage/twitter.png" alt="Twitter" class="img-fluid">
+          </a>
+        </div>
+        <div class="separator-line flex-grow-1 ms-3"></div>
+      </div>
+    </div>
+    
+    <!-- Image Column - Hidden on mobile -->
+    <div class="image-column col-lg-6 order-lg-2 order-1 position-relative d-none d-lg-block">
+      <img src="/images/homeimage/banner.png" class="banner-image img-fluid position-absolute" alt="Main food banner">
+      <img src="/images/homeimage/bannertop.png" class="decorative-image img-fluid position-absolute" alt="Food decoration">
+      <img src="/images/homeimage/banner1.png" class="banner1 img-fluid position-absolute" alt="Additional food image">
+      <img src="/images/homeimage/banner2.png" class="banner2 img-fluid position-absolute" alt="Additional food image">
+      <img src="/images/homeimage/banner3.png" class="banner3 img-fluid position-absolute" alt="Additional food image">
+    </div>
+  </div>
+</div>
+
+<app-specials />
+<app-expert />
+<app-customers />

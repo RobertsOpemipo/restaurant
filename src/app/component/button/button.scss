@@ -1,0 +1,61 @@
+/* buttons.css */
+/* Base button styles */
+.btn {
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Book Table button specific styles */
+  .btn-book {
+    background-color: #ff6b35;
+    color: #ffffff;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .btn-book:hover {
+    background-color: #e55a2b;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+  
+  /* Menu button variant */
+  .btn-menu {
+    background-color: #333;
+    color: #ffffff;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .btn-menu:hover {
+    background-color: #222;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+  
+  /* If you need a secondary style */
+  .btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f5f5f5;
+  }

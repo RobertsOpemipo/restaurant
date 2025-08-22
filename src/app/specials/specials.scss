@@ -1,0 +1,614 @@
+        /* Special Dishes Section Styles */
+        .special-dishes {
+          position: relative;
+          font-family: 'Inter', sans-serif;
+      }
+      
+      .header-bg-image {
+          background-image: url('/images/specials/leafbranch1.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 250px;
+          height: 250px;
+          top: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1.0;
+          z-index: 0;
+      }
+      
+      .menu-card {
+          background: transparent;
+          border: none;
+          padding: 15px;
+          text-align: center;
+          position: relative;
+          height: 100%;
+      }
+      
+      .menu-card .card-image-container {
+          position: relative;
+          margin-bottom: 20px;
+          border-radius: 15px;
+          overflow: hidden;
+          background: none;
+          height: 180px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .menu-card .card-image-container .card-image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          padding: 15px;
+      }
+      
+      .menu-card .card-image-container .price-badge {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background: #212529;
+          color: white;
+          padding: 6px 10px;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 13px;
+          min-width: 40px;
+          font-family: 'Inter', sans-serif;
+      }
+      
+      .menu-card .card-content {
+          padding: 0 15px 10px;
+      }
+      
+      .menu-card .card-content .card-title {
+          font-size: 1.15rem;
+          font-weight: 600;
+          margin-bottom: 12px;
+          color: #212529;
+          line-height: 1.4;
+          font-family: 'David Libre', serif;
+      }
+      
+      .menu-card .card-content .card-description {
+          color: #6c757d;
+          font-size: 0.85rem;
+          line-height: 1.6;
+          margin-bottom: 0;
+          padding: 0 10px 10px;
+          font-family: 'Inter', sans-serif;
+      }
+      
+      /* Enhanced Special Card Styles */
+      .special-card {
+          position: relative;
+          padding-top: 40px;
+      }
+      
+      .special-card .card-content {
+          padding: 50px 20px 30px;
+          border: 1px solid #dee2e6;
+          background: white;
+          border-radius: 80px 30px 80px 30px;
+          position: relative;
+          z-index: 1;
+          min-height: 360px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+      }
+      
+      .special-card .card-image-container {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 220px;
+          z-index: 2;
+          margin-bottom: 0;
+      }
+      
+      .special-card .card-image-container .card-image {
+          padding: 0;
+          object-fit: cover;
+          border-radius: 15px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+      
+      .special-card .decoration-leaf {
+          position: absolute;
+          width: 220px;
+          height: 170px;
+          background: url('/images/specials/leafbranch1.png') no-repeat center;
+          background-size: contain;
+          opacity: 0.8;
+          z-index: 0;
+      }
+      
+      .special-card .decoration-leaf.left {
+          bottom: 180px;
+          left: 180px;
+          transform: rotate(-20deg);
+      }
+      
+      .price-tag-image {
+          top: 45px;
+          right: 15px;
+          z-index: 3;
+      }
+      
+      .price-tag-image img {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+      }
+      
+      .special-container-image {
+          top: 240px;
+          left: 200px;
+          z-index: 1;
+      }
+      
+      .special-container-image img {
+          width: 100px;
+          height: 190px;
+          object-fit: contain;
+      }
+      
+      /* New decoration for $18 price tag */
+      .price-tag-decoration {
+          position: absolute;
+          bottom: 70px;
+          left: 170px;
+          width: 100px;
+          height: 100px;
+          background-image: url('/images/specials/leafbranch4.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 10;
+          opacity: 1.0;
+          transform: rotate(15deg);
+      }
+      
+      /* New decoration for egg and cucumber card */
+      .egg-decoration {
+          position: absolute;
+          top: 100px;
+          right: 20px;
+          width: 190px;
+          height: 190px;
+          background-image: url('/images/testimonials/onion.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 1;
+          opacity: 1.0;
+      }
+      
+      /* Welcome Section Styles with Decorative Images */
+      .welcome-section {
+        background-color: #f8f9fa;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0;
+      }
+
+      .welcome-section h2,
+.welcome-section p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .welcome-section h2,
+  .welcome-section p {
+    text-align: left;
+  }
+}
+
+/* Responsive image adjustments */
+.welcome-section img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .welcome-section {
+    padding: 50px 0;
+  }
+  
+  .welcome-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .welcome-section img {
+    margin-bottom: 2rem;
+  }
+}
+      
+      /* Decorative Image 1 - Top Left */
+      .welcome-section::before {
+          content: '';
+          position: absolute;
+          top: 120px;
+          left: 600px;
+          width: 120px;
+          height: 400px;
+          background-image: url('/images/homeimage/banner2.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 0;
+      }
+      
+      /* Decorative Image 2 - Top Right */
+      .welcome-section::after {
+          content: '';
+          position: absolute;
+          top: 270px;
+          left: 1080px;
+          width: 290px;
+          height: 290px;
+          background-image: url('/images/specials/leafbranch2.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 1.9;
+          z-index: 0;
+          transform: rotate(240deg);
+      }
+      
+      .welcome-section .container {
+          position: relative;
+          z-index: 1;
+      }
+      
+      /* Decorative Image 4 - Bottom Right */
+      .decorative-image-4 {
+          position: absolute;
+          top: 400px;
+          right: 420px;
+          width: 50px;
+          height: 50px;
+          background-image: url('/images/specials/slice.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 0;
+          transform: rotate(15deg);
+      }
+      .leaf1, .leaf2, .leaf3, .leaf4,
+.decorative-image-4, .decorative-image-5 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .leaf1, .leaf2, .leaf3, .leaf4,
+  .decorative-image-4, .decorative-image-5 {
+    display: block;
+    position: absolute;
+  }
+
+  .leaf1 {
+    top: 280px;
+    left: 280px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/specials/leaf1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(255deg);
+  }
+
+  .leaf2 {
+    top: 320px;
+    left: 90px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/specials/leaf2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+
+  .leaf3 {
+    bottom: 250px;
+    right: 600px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/specials/leaf3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(360deg);
+  }
+
+  .leaf4 {
+    bottom: 250px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/specials/leaf4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(360deg);
+  }
+
+  /* Decorative Image 4 - Bottom Right */
+  .decorative-image-4 {
+    top: 400px;
+    right: 420px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/specials/slice.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 0;
+    transform: rotate(15deg);
+  }
+
+  /* Decorative Image 5 - Bottom Right */
+  .decorative-image-5 {
+    top: 350px;
+    right: 630px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/specials/slice.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: 0;
+    transform: rotate(270deg);
+  }
+}
+
+/* Button centering on mobile */
+.button-group {
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    justify-content: flex-start;
+  }
+}
+      
+      .leaf1 {
+          position: absolute;
+          top: 280px;
+          left: 280px;
+          width: 150px;
+          height: 150px;
+          background-image: url('/images/specials/leaf1.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 1;
+          transform: rotate(255deg);
+      }
+      
+      .leaf2 {
+          position: absolute;
+          top: 320px;
+          left: 90px;
+          width: 150px;
+          height: 150px;
+          background-image: url('/images/specials/leaf2.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 1;
+          transform: rotate(0deg);
+      }
+      
+      .leaf3 {
+          position: absolute;
+          bottom: 250px;
+          right: 600px;
+          width: 150px;
+          height: 150px;
+          background-image: url('/images/specials/leaf3.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 1;
+          transform: rotate(360deg);
+      }
+      
+      .leaf4 {
+          position: absolute;
+          bottom: 250px;
+          left: 100px;
+          width: 150px;
+          height: 150px;
+          background-image: url('/images/specials/leaf4.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 1;
+          transform: rotate(360deg);
+      }
+      
+      /* Decorative Image 5 - Bottom Right */
+      .decorative-image-5 {
+          position: absolute;
+          top: 350px;
+          right: 630px;
+          width: 50px;
+          height: 50px;
+          background-image: url('/images/specials/slice.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.9;
+          z-index: 0;
+          transform: rotate(270deg);
+      }
+      
+      .welcome-section h2 {
+          font-family: 'David Libre', serif;
+          font-size: 2rem;
+          font-weight: 500;
+          color: #212529;
+          position: relative;
+      }
+      
+      .welcome-section p {
+          color: #6c757d;
+          line-height: 1.7;
+          font-size: 1rem;
+          position: relative;
+      }
+      
+      .welcome-section .lead {
+          font-size: 1.1rem;
+          color: #495057;
+      }
+      
+      .welcome-section img {
+          max-height: 400px;
+          width: 100%;
+          object-fit: contain;
+          position: relative;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+          .special-card .card-content {
+              min-height: 350px;
+              padding: 50px 20px 25px;
+          }
+          
+          .special-card .card-image-container {
+              height: 200px;
+          }
+          
+          .welcome-section::before {
+              width: 80px;
+              height: 80px;
+              top: 15px;
+              left: 15px;
+          }
+          
+          .welcome-section::after {
+              width: 60px;
+              height: 60px;
+          }
+          
+          .price-tag-decoration {
+              width: 20px;
+              height: 20px;
+          }
+          
+          .egg-decoration {
+              width: 30px;
+              height: 30px;
+              bottom: 50px;
+              right: 20px;
+          }
+      }
+      
+      @media (max-width: 768px) {
+          .special-card .card-content {
+              min-height: 320px;
+              padding: 45px 15px 20px;
+          }
+          
+          .special-card .card-image-container {
+              height: 180px;
+          }
+          
+          .welcome-section {
+              text-align: center;
+              padding: 60px 0;
+          }
+          
+          .welcome-section::before,
+          .welcome-section::after,
+          .decorative-image-3,
+          .decorative-image-4 {
+              display: none;
+          }
+          
+          .welcome-section img {
+              max-height: 450px;
+              margin-bottom: 2rem;
+          }
+          
+          .menu-card {
+              margin-bottom: 20px;
+          }
+          
+          .menu-card .card-image-container {
+              height: 160px;
+          }
+          
+          .menu-card .card-content .card-title {
+              font-size: 1.05rem;
+          }
+          
+          .menu-card .card-content .card-description {
+              font-size: 0.8rem;
+          }
+          
+          .price-tag-decoration {
+              width: 18px;
+              height: 18px;
+              top: 3px;
+              right: 3px;
+          }
+          
+          .egg-decoration {
+              width: 25px;
+              height: 25px;
+              bottom: 40px;
+              right: 15px;
+          }
+      }
+      
+      @media (max-width: 576px) {
+          .special-card .card-content {
+              min-height: 300px;
+              padding: 40px 15px 20px;
+          }
+          
+          .special-card .card-image-container {
+              height: 160px;
+          }
+          
+          .menu-card .card-image-container {
+              height: 140px;
+          }
+          
+          .menu-card .card-content .card-title {
+              font-size: 1rem;
+          }
+          
+          .welcome-section {
+              padding: 50px 0;
+          }
+          
+          .welcome-section h2 {
+              font-size: 1.8rem;
+          }
+          
+          .price-tag-decoration {
+              width: 15px;
+              height: 15px;
+          }
+          
+          .egg-decoration {
+              width: 20px;
+              height: 20px;
+          }
+      }

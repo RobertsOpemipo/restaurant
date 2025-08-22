@@ -1,0 +1,183 @@
+.expert-chef-section {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  padding: 80px 0;
+  position: relative; /* Added for background image positioning */
+  overflow: hidden; /* Hide any overflowing background image */
+  
+  /* New background image at top left */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    background-image: url('/images/expert/onion.png'); /* Add your image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.98; /* Adjust opacity as needed */
+    z-index: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Ensure content stays above background */
+    z-index: 1;
+  }
+  
+  .chef-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .chef-info-col {
+    flex: 0 1 500px;
+    padding: 0 20px;
+  }
+  
+  .chef-image-col {
+    flex: 1 1 auto;
+    position: relative;
+    max-width: 500px; /* Reduced from 659px */
+  }
+  
+  .chef-title {
+    font-family: 'David Libre', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 1.5rem;
+  }
+  
+  .chef-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  
+  .chef-bullet-points {
+    margin-bottom: 2rem;
+    
+    .bullet-point {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      
+      .bullet-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+      }
+      
+      span {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
+  }
+  
+  .chef-portrait {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Reduced from 800px */
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1200px) {
+  .expert-chef-section {
+    .chef-portrait {
+      max-height: 550px; /* Reduced from 710px */
+    }
+    
+    &::before {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .expert-chef-section {
+    .chef-content-wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .chef-info-col {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .chef-image-col {
+      order: 2;
+      max-width: 450px; /* Reduced from 550px */
+      width: 100%;
+    }
+    
+    .chef-bullet-points {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    
+    .button-group {
+      justify-content: center;
+    }
+    
+    &::before {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expert-chef-section {
+    padding: 60px 0;
+    
+    .chef-title {
+      font-size: 2rem;
+    }
+    
+    .chef-bullet-points {
+      flex-direction: column;
+      
+      .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    
+    .chef-portrait {
+      max-height: 500px;
+    }
+    
+    &::before {
+      width: 150px;
+      height: 150px;
+      opacity: 0.15;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .expert-chef-section {
+    &::before {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
